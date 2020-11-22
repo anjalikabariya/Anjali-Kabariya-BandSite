@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>BandSite</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <!-- navigation bar logo image -->
+            <img src="./Assets/Logo/Logo-bandsite.png" class="header__logo" alt="BandSite-Logo">
+            <div class="navigation__bar">
+                <!-- navigation bar links to navigate between different pages -->
+                    <h3 class="navigation__link1 subheader">Biography</h3>
+                    <h3 class="navigation__link2 subheader">Shows</h3>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- hero image set as background image and text styled using classes and SASS -->
+        <div class="hero__image">
+            <div class="hero__header">
+                <h1>Gaspard Auge & Xavier de Rosnay</h1>
+            </div>
+        </div>
+        <body>
+            <!-- musicians image and biography container centered horizontally with a quote from musician written below image -->
+            <div class="musicians">
+                <h1 class="musicians__image-title">About the Musicians</h1>
+                <img src="./Assets/Images/band-image.jpg" alt="musicians-image" class="musicians__image">
+                <div>
+                    <h2 class="musicians__quote">"We are more comfortable with not fighting what comes naturally. Before we might have thought, 'We need to be smarter than this'"</h2>
+                    <h3 class="musicians__quote-writer">-Xavier de Rosnay</h3>
+                </div>
+                <div>
+                    <!-- musicians biography title and biography divided into two parts displayed side by side-->
+                    <h2 class="musicians__names">Xavier de Rosnay & Gaspard Auge</h2>
+                    <div class="musicians__biography">
+                        <p class="musicians__biography-para1">Xavier De Rosnay and Gaspard Auge had a few mutual friends, who happened to run a record label, seeking tracks for a compilation. With an immediate connection, the pair decided to try their hand at making a song. that's when they created their breakout single. We Are Your Friends - a feel-good, funk-filled, instant anthem that lost the remix contest, but won the attention of Pedro Winter, director of newly founded Ed Banger Records, who boasted Daft Punk as former clients. One week later, they were in his office, signing a record deal.</p>
+                        <p class="musicians__biography-para2">Xavier De Rosnay and Gaspard Auge had a few mutual friends, who happened to run a record label, seeking tracks for a compilation. With an immediate connection, the pair decided to try their hand at making a song. that's when they created their breakout single. We Are Your Friends - a feel-good, funk-filled, instant anthem that lost the remix contest, but won the attention of Pedro Winter, director of newly founded Ed Banger Records, who boasted Daft Punk as former clients. One week later, they were in his office, signing a record deal.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- gallery container titled "photo gallery" with 9 images centered using flex display. Images are positioned in a 3*3 format-->
+            <div class="gallery">
+                <h1 class="gallery__title">Photo Gallery</h1>
+                <div class="gallery__image-container">
+                    <img src="./Assets/Images/Photo-gallery-1.jpg" alt="gallery-image" class="gallery__image">
+                    <img src="./Assets/Images/Photo-gallery-2.jpg" alt="gallery-image" class="gallery__image">
+                    <img src="./Assets/Images/Photo-gallery-3.jpg" alt="gallery-image" class="gallery__image">
+                    <img src="./Assets/Images/Photo-gallery-4.jpg" alt="gallery-image" class="gallery__image">
+                    <img src="./Assets/Images/Photo-gallery-5.jpg" alt="gallery-image" class="gallery__image">
+                    <img src="./Assets/Images/Photo-gallery-6.jpg" alt="gallery-image" class="gallery__image">
+                    <img src="./Assets/Images/Photo-gallery-7.jpg" alt="gallery-image" class="gallery__image">
+                    <img src="./Assets/Images/Photo-gallery-8.jpg" alt="gallery-image" class="gallery__image">
+                    <img src="./Assets/Images/Photo-gallery-9.jpg" alt="gallery-image" class="gallery__image">
+                </div>
+            </div>
+        </body>
+    </main>
+    <!-- footer section containing footer title with links to social media contacts and bandsite logo at top -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__contacts-section">
+                <div>
+                    <h1 class="footer__title">Get In Touch</h1>
+                </div>
+                <div class="footer__contacts-socialmedia">
+                    <img src="./Assets/Icons/SVG/Icon-instagram.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                    <img src="./Assets/Icons/SVG/Icon-facebook.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                    <img src="./Assets/Icons/SVG/Icon-twitter.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                </div>
+            </div>
+            <div>
+                <img src="./Assets/Logo/Logo-bandsite.svg" alt="footer__logo" class="footer__logo">
+            </div>
+        </div>
+        <!-- contacts of individual agents for different locations followed by copyright line for website -->
+        <div class="agents">
+            <div class="agents-contact">
+                <h3 class="subheader">Richard Rovner<br>The Bees Knees Management</h3>
+                <p>460 King Street West <br> Toronto, Ontario M5V 1L7</p>
+                <p>info@thebeesknees.com</p>
+            </div>
+            <div class="agents-contact">
+                <h3 class="subheader">Marsha Vlasic<br>Artist Group International</h3>
+                <p>Booking Agent for <br>US / South America / Japan</p>
+                <p>marsha.vlasic@artistgrp.com</p>
+            </div>
+            <div class="agents-contact">
+                <h3 class="subheader">Russel Warby<br>William Morrir Entertainment</h3>
+                <p>Booking Agent for <br> UK / EU / AU </p>
+                <p>RLW@wmeentertainment.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright The Bees Knees @ 2018 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/Metropolis-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/Metropolis-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/Metropolis-SemiBold.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/Metropolis-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/Metropolis-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/Metropolis-SemiBold.otf");
+  font-weight: 500;
+}
+
+html, main, body, div {
+  font-family: 'Avenir Next';
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-align: center;
+  color: #323232;
+}
+
+ul, h3, h2, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 320px) {
+  li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.subheader {
+  font-weight: 500;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #323232;
+  color: #ffffff;
+}
+
+.navigation__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__link1 {
+  font-weight: 500;
+  color: #ffffff;
+  padding: 30px 24px 0 24px;
+  border-bottom: 5px solid white;
+}
+
+.navigation__link2 {
+  font-weight: 500;
+  color: #ffffff;
+  padding: 30px 24px 0 24px;
+}
+
+.header__logo {
+  padding: 30px 24px 30px 142px;
+}
+
+.hero__image {
+  height: 670px;
+  width: 100%;
+  background-image: url("../Assets/Images/hero-image.jpg");
+  background-size: cover;
+  background-color: #323232;
+  opacity: 50%;
+  background-position: center;
+}
+
+.hero__header {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  padding-top: 23%;
+  padding-left: 142px;
+  width: 800px;
+  text-align: start;
+  font-weight: 700;
+}
+
+.musicians__image {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  width: 896px;
+  height: 500px;
+}
+
+.musicians__image-title {
+  padding-left: 142px;
+  text-align: left;
+  padding-top: 48px;
+}
+
+.musicians__quote {
+  padding-left: 225px;
+  width: 800px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+.musicians__quote-writer {
+  padding-left: 225px;
+  text-align: left;
+  padding-bottom: 56px;
+}
+
+.musicians__names {
+  text-align: left;
+  padding: 0 0 32px 225px;
+}
+
+.musicians__biography {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 225px;
+  margin-bottom: 16px;
+}
+
+.musicians__biography-para1 {
+  text-align: left;
+  width: 420px;
+  margin-right: 20px;
+}
+
+.musicians__biography-para2 {
+  margin-left: 20px;
+  text-align: left;
+  width: 420px;
+}
+
+.gallery {
+  background-color: #e1e1e1;
+  padding-left: 130px;
+}
+
+.gallery__title {
+  padding-bottom: 40px;
+  padding-top: 48px;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.gallery__image {
+  padding: 12px;
+  width: 344px;
+  height: 193px;
+}
+
+.gallery__image-container {
+  margin: 0;
+  padding-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #323232;
+}
+
+.footer__title {
+  color: #ffffff;
+  padding-right: 95px;
+  text-align: left;
+}
+
+.footer__contacts-socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__contacts-socialmedia-icon {
+  padding: 0 16px 0 16px;
+}
+
+.footer__container {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 48px 130px 56px 142px;
+}
+
+.footer__contacts-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
+  height: 24px;
+  width: 120px;
+}
+
+.agents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 142px;
+}
+
+.agents-contact {
+  padding-right: 40px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.copyright {
+  text-align: left;
+  padding: 16px 0 40px 142px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=styles.css.map */

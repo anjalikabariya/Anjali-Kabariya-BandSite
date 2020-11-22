@@ -1,0 +1,181 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'defaults';
+
+// applying flex display for navigation container
+.navigation{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: $base-color;
+    color: $white;
+    // applying flex display for navigation links container
+    &__bar{
+        display: flex;
+    }
+
+    // styling for navigation links
+    &__link1{
+        font-weight: 500;
+        color: $white;
+        padding: 30px 24px 0 24px;
+        border-bottom: 5px solid white;
+    }
+    &__link2{
+        font-weight: 500;
+        color: $white;
+        padding: 30px 24px 0 24px;
+    }
+}
+// positioning logo in navigation container
+.header__logo{
+    padding: 30px 24px 30px 142px;
+}
+
+// background image for hero container
+.hero{
+    &__image{
+        height: 670px;
+        width: 100%;
+        background-image: url("../Assets/Images/hero-image.jpg");
+        background-size: cover;
+        background-color: $base-color;
+        opacity: 50%;
+        background-position: center;
+    }
+    // hero text positioning style
+    &__header{
+        font-size: 40px;
+        display: flex;
+        color: $white;
+        padding-top: 23%;
+        padding-left: 142px;
+        width: 800px;
+        text-align: start;
+        font-weight: 700;
+    }
+}
+
+.musicians{
+    // musicians image and title styling in about section
+    &__image{
+        padding-top: 48px;
+        padding-bottom: 48px;
+        width: 896px;
+        height: 500px;
+        &-title{
+            padding-left: 142px;
+            text-align: left;
+            padding-top: 48px;
+        }
+    }
+    //musician's quote and name
+    &__quote{
+        padding-left: 225px;
+        width: 800px;
+        padding-bottom: 40px;
+        text-align: left;
+        &-writer{
+            padding-left: 225px;
+            text-align: left;
+            padding-bottom: 56px;
+        }
+    }
+    //musician names and title of biography
+    &__names{
+        text-align: left;
+        padding: 0 0 32px 225px;
+    }
+    //musician biograohy paragraph styling 
+    &__biography{
+        display: flex;
+        padding-left: 225px;
+        margin-bottom: 16px;
+        &-para1{
+            text-align: left;
+            width: 420px;
+            margin-right: 20px;
+        }
+        &-para2{
+            margin-left: 20px;
+            text-align: left;
+            width: 420px;
+        }
+    }
+}
+// photo gallery styling 
+.gallery{
+    background-color: $gallery-background;
+    padding-left: 130px;
+    &__title{
+        padding-bottom: 40px;
+        padding-top: 48px;
+        text-align: left;
+        padding-left: 12px;
+    }
+    // individual image container styling
+    &__image{
+        padding: 12px;
+        width: 344px;
+        height: 193px;
+        &-container{
+            margin:0;
+            padding-bottom: 28px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+// footer section for contacts
+.footer{
+    background-color: $base-color;
+    
+    &__title{
+        color: $white;
+        padding-right: 95px;
+        text-align: left;
+    }
+    //  styling
+    &__contacts-socialmedia{
+        display: flex;
+        justify-content: space-between;
+        // social media icons
+        &-icon{
+            padding: 0 16px 0 16px;
+        }
+    }
+    // main footer container
+    &__container{
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        padding: 48px 130px 56px 142px;
+    }
+    // footer section for contacts
+    &__contacts-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    // bandsite logo in footer 
+    &__logo{
+        height: 24px;
+        width: 120px;
+    }
+}
+// individual agent contacts styling
+.agents{
+    display: flex;
+    padding-left: 142px;
+    &-contact{
+        padding-right: 40px;
+        text-align: left;
+        color: $white;
+    }
+}
+// copyright line at footer end
+.copyright{
+    text-align: left;
+    padding:16px 0 40px 142px;
+    color: $white;
+}
