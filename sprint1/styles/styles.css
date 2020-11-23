@@ -117,7 +117,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .header__logo {
-    padding: 30px 24px 30px 24px;
+    padding: 1.875rem 1.5rem 1.875rem 1.5rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -126,7 +126,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .header__logo {
-    padding: 30px 24px 30px 142px;
+    padding: 1.875rem 1.5rem 1.875rem 8.875rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -134,7 +134,7 @@ a {
 }
 
 .navigation {
-  height: 80px;
+  height: 5rem;
   width: 100%;
   background-color: #323232;
   color: #ffffff;
@@ -145,7 +145,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 16px;
+    padding-top: 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -188,7 +188,7 @@ a {
 
 @media screen and (min-width: 320px) {
   .navigation__bar {
-    padding-top: 16px;
+    padding-top: 1rem;
   }
 }
 
@@ -207,25 +207,25 @@ a {
 .navigation__link1 {
   font-weight: 500;
   color: #ffffff;
-  border-bottom: 5px solid white;
+  border-bottom: 0.3125rem solid white;
 }
 
 @media screen and (min-width: 320px) {
   .navigation__link1 {
-    width: 162px;
-    padding-bottom: 20px;
+    width: 10.125rem;
+    padding-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .navigation__link1 {
-    padding: 30px 24px 24px 24px;
+    padding: 1.875rem 1.5rem 1.5rem 1.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .navigation__link1 {
-    padding: 30px 24px 24px 24px;
+    padding: 1.875rem 1.5rem 1.5rem 1.5rem;
   }
 }
 
@@ -236,20 +236,20 @@ a {
 
 @media screen and (min-width: 320px) {
   .navigation__link2 {
-    width: 162px;
-    padding-bottom: 20px;
+    width: 10.125rem;
+    padding-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .navigation__link2 {
-    padding: 30px 24px 0 24px;
+    padding: 1.875rem 1.5rem 0 1.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .navigation__link2 {
-    padding: 30px 24px 0 24px;
+    padding: 1.875rem 1.5rem 0 1.5rem;
   }
 }
 
@@ -270,19 +270,19 @@ a {
 
 @media screen and (min-width: 320px) {
   .hero__image {
-    height: 183px;
+    height: 11.4375rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero__image {
-    height: 400px;
+    height: 25rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__image {
-    height: 670px;
+    height: 41.875rem;
   }
 }
 
@@ -297,49 +297,49 @@ a {
 
 @media screen and (min-width: 320px) {
   .hero__header {
-    font-size: 24px;
-    padding-left: 16px;
+    font-size: 1.5rem;
+    padding-left: 1rem;
     width: 60%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero__header {
-    font-size: 60px;
-    padding-left: 24px;
+    font-size: 3.75rem;
+    padding-left: 1.5rem;
     width: 70%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__header {
-    font-size: 60px;
-    padding-left: 142px;
+    font-size: 3.75rem;
+    padding-left: 8.875rem;
     width: 50%;
   }
 }
 
 @media screen and (min-width: 320px) {
   .musicians__image {
-    padding-bottom: 24px;
-    width: 288px;
-    height: 150px;
+    padding-bottom: 1.5rem;
+    width: 18rem;
+    height: 9.375rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .musicians__image {
-    padding-bottom: 48px;
-    width: 720px;
-    height: 400px;
+    padding-bottom: 3rem;
+    width: 45rem;
+    height: 25rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__image {
-    padding-bottom: 48px;
-    width: 800px;
-    height: 500px;
+    padding-bottom: 3rem;
+    width: 50rem;
+    height: 31.25rem;
   }
 }
 
@@ -349,22 +349,22 @@ a {
 
 @media screen and (min-width: 320px) {
   .musicians__image-title {
-    font-size: 24px;
-    padding: 32px 0 24px 16px;
+    font-size: 1.5rem;
+    padding: 2rem 0 1.5rem 1rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .musicians__image-title {
-    font-size: 36px;
-    padding: 48px 0 48px 24px;
+    font-size: 2.25rem;
+    padding: 3rem 0 3rem 1.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__image-title {
-    font-size: 36px;
-    padding: 48px 0 48px 142px;
+    font-size: 2.25rem;
+    padding: 3rem 0 3rem 8.875rem;
   }
 }
 
@@ -379,25 +379,25 @@ a {
 
 @media screen and (min-width: 320px) {
   .musicians__quote {
-    font-size: 14px;
-    padding-bottom: 32px;
-    width: 288px;
+    font-size: 0.875rem;
+    padding-bottom: 2rem;
+    width: 18rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .musicians__quote {
-    font-size: 24px;
-    padding-bottom: 40px;
-    width: 720px;
+    font-size: 1.5rem;
+    padding-bottom: 2.5rem;
+    width: 45rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__quote {
-    font-size: 24px;
-    padding-bottom: 40px;
-    width: 800px;
+    font-size: 1.5rem;
+    padding-bottom: 2.5rem;
+    width: 50rem;
   }
 }
 
@@ -407,22 +407,22 @@ a {
 
 @media screen and (min-width: 320px) {
   .musicians__quote-writer {
-    padding: 0 0 40px 0;
-    font-size: 13px;
+    padding: 0 0 2.5rem 0;
+    font-size: 0.8125rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .musicians__quote-writer {
-    padding: 0 0 56px 0;
-    font-size: 16px;
+    padding: 0 0 3.5rem 0;
+    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__quote-writer {
-    font-size: 16px;
-    padding: 0 0 56px 0;
+    font-size: 1rem;
+    padding: 0 0 3.5rem 0;
   }
 }
 
@@ -432,19 +432,19 @@ a {
 
 @media screen and (min-width: 320px) {
   .musicians__names {
-    padding: 0 16px 24px 0;
+    padding: 0 1rem 1.5rem 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .musicians__names {
-    padding: 0 24px 32px 0;
+    padding: 0 1.5rem 2rem 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__names {
-    padding: 0 0 32px 0;
+    padding: 0 0 2rem 0;
   }
 }
 
@@ -487,19 +487,19 @@ a {
 
 @media screen and (min-width: 320px) {
   .musicians__biography-container {
-    width: 288px;
+    width: 18rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .musicians__biography-container {
-    width: 720px;
+    width: 45rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__biography-container {
-    width: 800px;
+    width: 50rem;
   }
 }
 
@@ -509,7 +509,7 @@ a {
 
 @media screen and (min-width: 320px) {
   .musicians__biography-para1 {
-    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -518,7 +518,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .musicians__biography-para1 {
-    padding: 0 12px 48px 0;
+    padding: 0 0.75rem 3rem 0;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -527,8 +527,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .musicians__biography-para1 {
-    padding: 0 20px 48px 0;
-    width: 420px;
+    padding: 0 1.25rem 3rem 0;
+    width: 26.25rem;
   }
 }
 
@@ -538,7 +538,7 @@ a {
 
 @media screen and (min-width: 320px) {
   .musicians__biography-para2 {
-    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -547,7 +547,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .musicians__biography-para2 {
-    padding: 0 0 48px 12px;
+    padding: 0 0 3rem 0.75rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -556,8 +556,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .musicians__biography-para2 {
-    padding: 0 0 48px 20px;
-    width: 420px;
+    padding: 0 0 3rem 1.25rem;
+    width: 26.25rem;
   }
 }
 
@@ -571,46 +571,46 @@ a {
 
 @media screen and (min-width: 320px) {
   .gallery__title {
-    font-size: 24px;
-    padding: 32px 0 24px 16px;
+    font-size: 1.5rem;
+    padding: 2rem 0 1.5rem 1rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .gallery__title {
-    font-size: 36px;
-    padding: 48px 0 48px 24px;
+    font-size: 2.25rem;
+    padding: 3rem 0 3rem 1.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__title {
-    font-size: 36px;
-    padding: 48px 0 48px 142px;
+    font-size: 2.25rem;
+    padding: 3rem 0 3rem 8.875rem;
   }
 }
 
 @media screen and (min-width: 320px) {
   .gallery__image {
-    padding: 8px;
-    width: 288px;
-    height: 190px;
+    padding: 0.5rem;
+    width: 18rem;
+    height: 11.875rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .gallery__image {
-    height: 126px;
-    width: 224px;
-    padding: 12px;
+    height: 7.875rem;
+    width: 14.5rem;
+    padding: 0.75rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__image {
-    padding: 12px;
-    width: 290px;
-    height: 193px;
+    padding: 0.75rem;
+    width: 18.125rem;
+    height: 12.0625rem;
   }
 }
 
@@ -620,7 +620,7 @@ a {
 
 @media screen and (min-width: 320px) {
   .gallery__image-container {
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
   }
 }
 
@@ -634,13 +634,13 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__image-container {
-    padding-bottom: 28px;
+    padding-bottom: 1.75rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -668,19 +668,19 @@ a {
 
 @media screen and (min-width: 320px) {
   .footer__container {
-    padding: 16px;
+    padding: 1rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer__container {
-    padding: 24px;
+    padding: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    padding: 48px 130px 56px 142px;
+    padding: 3rem 8.125rem 3.5rem 8.875rem;
   }
 }
 
@@ -719,22 +719,22 @@ a {
 
 @media screen and (min-width: 320px) {
   .footer__title {
-    font-size: 24px;
-    padding: 16px 0 16px 0;
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer__title {
-    font-size: 36px;
-    padding: 12px 40px 12px 0;
+    font-size: 2.25rem;
+    padding: 0.75rem 2.5rem 0.75rem 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__title {
-    font-size: 36px;
-    padding: 24px 84px 30px 0;
+    font-size: 2.25rem;
+    padding: 1.5rem 5.25rem 1.875rem 0;
   }
 }
 
@@ -748,7 +748,7 @@ a {
 }
 
 .footer__contacts-socialmedia-icon {
-  padding-right: 16px;
+  padding-right: 1rem;
 }
 
 @media screen and (min-width: 320px) {
@@ -762,9 +762,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 20px 0 12px 12px;
-    height: 24px;
-    width: 120px;
+    padding: 1.25rem 0 0.75rem 0.75rem;
+    height: 1.5rem;
+    width: 7.5rem;
   }
 }
 
@@ -773,15 +773,15 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 24px;
-    padding: 32px 16px 0 0;
-    width: 120px;
+    height: 1.5rem;
+    padding: 2rem 1rem 0 0;
+    width: 7.5rem;
   }
 }
 
 @media screen and (min-width: 320px) {
   .agents {
-    margin: 16px;
+    margin: 1rem;
     padding: 0;
   }
 }
@@ -792,7 +792,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    margin: 24px;
+    margin: 1.5rem;
   }
 }
 
@@ -802,12 +802,12 @@ a {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
-    padding-left: 142px;
+    padding-left: 8.875rem;
   }
 }
 
 .agents__contact {
-  padding-right: 18px;
+  padding-right: 1.125rem;
   text-align: left;
   color: #ffffff;
 }
@@ -818,22 +818,22 @@ a {
 
 @media screen and (min-width: 320px) {
   .agents__contact-name {
-    padding-top: 8px;
-    font-size: 13px;
+    padding-top: 0.5rem;
+    font-size: 0.8125rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .agents__contact-name {
     padding-top: 0;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .agents__contact-name {
     padding-top: 0;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -846,19 +846,19 @@ a {
 @media screen and (min-width: 320px) {
   .copyright {
     width: 70%;
-    padding: 16px 16px 24px 16px;
+    padding: 1rem 1rem 1.5rem 1rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .copyright {
-    padding: 16px 24px 40px 24px;
+    padding: 1rem 1.5rem 2.5rem 1.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .copyright {
-    padding: 16px 0 40px 142px;
+    padding: 1rem 0 2.5rem 8.875rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
