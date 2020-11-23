@@ -16,13 +16,19 @@ ul, h3, h2, h1{
 }
 li{
     list-style-type: none;
-    font-size: 14px;
-    line-height: 20px;
     margin: 0;
     padding: 0;
     @include mobile{
         font-size: 13px;
         line-height: 18px;
+    }
+    @include tablet{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @include desktop{
+        font-size: 14px;
+        line-height: 20px;  
     }
 }
 a{
@@ -30,4 +36,15 @@ a{
 }
 .subheader{
     font-weight: 500;
+}
+p{
+    @include mobile{
+        font-size: 13px;
+    }
+    @include tablet{
+        font-size: 14px;
+    }
+    @include desktop{
+        font-size: 14px;
+    }
 }

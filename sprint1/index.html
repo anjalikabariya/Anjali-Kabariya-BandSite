@@ -11,18 +11,20 @@
         <nav class="navigation">
             <!-- navigation bar logo image -->
             <img src="./Assets/Logo/Logo-bandsite.png" class="header__logo" alt="BandSite-Logo">
-            <div class="navigation__bar">
+            <div>
+                <ul class="navigation__bar">
                 <!-- navigation bar links to navigate between different pages -->
-                    <h3 class="navigation__link1 subheader">Biography</h3>
-                    <h3 class="navigation__link2 subheader">Shows</h3>
+                    <li><h3 class="navigation__link1">Biography</h3></li>
+                    <li><h3 class="navigation__link2">Shows</h3></li>
+                </ul>
             </div>
         </nav>
     </header>
     <main>
         <!-- hero image set as background image and text styled using classes and SASS -->
         <div class="hero__image">
-            <div class="hero__header">
-                <h1>Gaspard Auge & Xavier de Rosnay</h1>
+            <div>
+                <h1 class="hero__header">Gaspard Auge & Xavier de Rosnay</h1>
             </div>
         </div>
         <body>
@@ -30,11 +32,11 @@
             <div class="musicians">
                 <h1 class="musicians__image-title">About the Musicians</h1>
                 <img src="./Assets/Images/band-image.jpg" alt="musicians-image" class="musicians__image">
-                <div>
+                <div class="musicians__quote-container">
                     <h2 class="musicians__quote">"We are more comfortable with not fighting what comes naturally. Before we might have thought, 'We need to be smarter than this'"</h2>
                     <h3 class="musicians__quote-writer">-Xavier de Rosnay</h3>
                 </div>
-                <div>
+                <div class="musicians__biography-container">
                     <!-- musicians biography title and biography divided into two parts displayed side by side-->
                     <h2 class="musicians__names">Xavier de Rosnay & Gaspard Auge</h2>
                     <div class="musicians__biography">
@@ -79,18 +81,18 @@
         </div>
         <!-- contacts of individual agents for different locations followed by copyright line for website -->
         <div class="agents">
-            <div class="agents-contact">
-                <h3 class="subheader">Richard Rovner<br>The Bees Knees Management</h3>
+            <div class="agents__contact">
+                <h3 class="agents__contact-name">Richard Rovner<br>The Bees Knees Management</h3>
                 <p>460 King Street West <br> Toronto, Ontario M5V 1L7</p>
                 <p>info@thebeesknees.com</p>
             </div>
-            <div class="agents-contact">
-                <h3 class="subheader">Marsha Vlasic<br>Artist Group International</h3>
+            <div class="agents__contact">
+                <h3 class="agents__contact-name">Marsha Vlasic<br>Artist Group International</h3>
                 <p>Booking Agent for <br>US / South America / Japan</p>
                 <p>marsha.vlasic@artistgrp.com</p>
             </div>
-            <div class="agents-contact">
-                <h3 class="subheader">Russel Warby<br>William Morrir Entertainment</h3>
+            <div class="agents__contact">
+                <h3 class="agents__contact-name">Russel Warby<br>William Morrir Entertainment</h3>
                 <p>Booking Agent for <br> UK / EU / AU </p>
                 <p>RLW@wmeentertainment.com</p>
             </div>
