@@ -1,0 +1,50 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+html, main, body, div{
+    font-family: 'Avenir Next';
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-align: center;
+    color: $base-color;
+}
+ul, h3, h2, h1{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @include mobile{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    @include tablet{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @include desktop{
+        font-size: 14px;
+        line-height: 20px;  
+    }
+}
+a{
+    text-decoration: none;
+}
+.subheader{
+    font-weight: 500;
+}
+p{
+    @include mobile{
+        font-size: 13px;
+    }
+    @include tablet{
+        font-size: 14px;
+    }
+    @include desktop{
+        font-size: 14px;
+    }
+}
