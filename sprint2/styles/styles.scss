@@ -345,7 +345,58 @@
 }
 
 //comment section to join conversation
-
+.comment{
+    padding:0 1.5em;
+    &__section-title{
+        @extend .gallery__title;
+    }
+    &__container{
+        margin: 1em;
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        &:nth-child(3){
+            border-bottom: 1px solid silver;
+            border-top: 1px solid silver;
+        }
+        &:nth-child(4){
+            border-bottom: 1px solid silver;
+        }
+        &:nth-child(5){
+            border-bottom: 1px solid silver;
+        }
+        
+    }
+    &__image{
+        padding: 1em 0;
+        &-icon{
+            object-fit: inherit;
+            height: 3em;
+            width: 3.5em;
+            border-radius: 50%;
+            object-position: right;
+        }
+    }
+    &__header{
+        width: inherit;
+        height: fit-content;
+        display: flex;
+        padding: 1.5em 0;
+        justify-content: space-between;
+        &-writer{
+            height: fit-content;
+        }
+        &-timestamp{
+            height: fit-content;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &__text{
+        text-align: left;
+        width: inherit;
+    }
+}
 
 // footer section for contacts
 .footer{

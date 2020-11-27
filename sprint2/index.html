@@ -60,14 +60,67 @@
                     <img src="./Assets/Images/Photo-gallery-9.jpg" alt="gallery-image" class="gallery__image">
                 </div>
             </div>
-            <div class="comment-section">
-                <h1 class="gallery__title">Join the Conversation</h1>
-                <div class="comment__container">
-                    <img src="" alt="">
-
+            <div class="comment__section">
+                <h1 class="comment__section-title">Join the Conversation</h1>
+                <div class="comment__section-newcomment">
+                    <div class="comment__image">
+                        <img src="./Assets/Images/Mohan-muruge.jpg" alt="person-image" class="comment__image-icon">
+                    </div>
+                    <div>
+                        <form class="comment__form" id="comment__form" action="get">
+                            <div class="form__section">
+                                <label for="name" class="comment-writer">Name</label>
+                                <input type="text" name="name" id="name" class="name" placeholder="Your name, e.g. Mohan Muruge">
+                            </div>
+                            <div class="form__section">
+                                <label for="comment" class="comment-text ">Comment</label>
+                                <input type="text" name="comment" id="comment" class="comment" placeholder="Add your comment">
+                            </div>
+                            <button type="submit" id="comment__button" value="comment">Submit</button>
+                        </form>
+                    </div>
                 </div>
-
-
+                <div class="com__container">
+                    <div class="comment__image">
+                        <img src="./Assets/Images/Mohan-muruge.jpg" alt="person-image" class="comment__image-icon">
+                    </div>
+                    <div class="comment">
+                        <div class="comment__header">    
+                            <h3 class="comment__header-writer"></h3>
+                            <p class="comment__header-timestamp"></p>
+                        </div>
+                        <p class="comment__text">
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="comment__container">
+                    <div class="comment__image">
+                        <img src="./Assets/Images/Mohan-muruge.jpg" alt="person-image" class="comment__image-icon">
+                    </div>
+                    <div class="comment">
+                        <div class="comment__header">    
+                            <h3 class="comment__header-writer">Micheal Lyons</h3>
+                            <p class="comment__header-timestamp">12/18/2019</p>
+                        </div>
+                        <p class="comment__text">
+                            They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greates opening of a concert I have EVER witnessed.
+                        </p>
+                    </div>
+                </div>
+                <div class="comment__container">
+                    <div class="comment__image">
+                        <img src="./Assets/Images/Mohan-muruge.jpg" alt="person-image" class="comment__image-icon">
+                    </div>
+                    <div class="comment">
+                        <div class="comment__header">    
+                            <h3 class="comment__header-writer">Micheal Lyons</h3>
+                            <p class="comment__header-timestamp">12/18/2019</p>
+                        </div>
+                        <p class="comment__text">
+                            They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greates opening of a concert I have EVER witnessed.
+                        </p>
+                    </div>
+                </div> -->
             </div>
         </body>
     </main>
@@ -109,6 +162,6 @@
         <div class="copyright">
             <p>Copyright The Bees Knees @ 2018 All Rights Reserved</p>
         </div>
+        <script src="./scipt.js"></script>
     </footer>
-</body>
 </html>

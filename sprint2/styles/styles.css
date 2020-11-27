@@ -581,26 +581,26 @@ a {
   background-color: #e1e1e1;
 }
 
-.gallery__title {
+.gallery__title, .comment__section-title {
   text-align: left;
 }
 
 @media screen and (min-width: 320px) {
-  .gallery__title {
+  .gallery__title, .comment__section-title {
     font-size: 1.5rem;
     padding: 2rem 0 1.5rem 1rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .gallery__title {
+  .gallery__title, .comment__section-title {
     font-size: 2.25rem;
     padding: 3rem 0 3rem 1.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .gallery__title {
+  .gallery__title, .comment__section-title {
     font-size: 2.25rem;
     padding: 3rem 0 3rem 8.875rem;
   }
@@ -670,6 +670,83 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.comment {
+  padding: 0 1.5em;
+}
+
+.comment__container {
+  margin: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comment__container:nth-child(3) {
+  border-bottom: 1px solid silver;
+  border-top: 1px solid silver;
+}
+
+.comment__container:nth-child(4) {
+  border-bottom: 1px solid silver;
+}
+
+.comment__container:nth-child(5) {
+  border-bottom: 1px solid silver;
+}
+
+.comment__image {
+  padding: 1em 0;
+}
+
+.comment__image-icon {
+  -o-object-fit: inherit;
+     object-fit: inherit;
+  height: 3em;
+  width: 3.5em;
+  border-radius: 50%;
+  -o-object-position: right;
+     object-position: right;
+}
+
+.comment__header {
+  width: inherit;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5em 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comment__header-writer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.comment__header-timestamp {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.comment__text {
+  text-align: left;
+  width: inherit;
 }
 
 .footer {
