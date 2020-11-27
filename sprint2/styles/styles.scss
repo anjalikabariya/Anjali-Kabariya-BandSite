@@ -309,33 +309,35 @@
         display: block;
         @include mobile{
             padding: 0.5rem;
-            width: 18rem;
-            height: 11.875rem;
+            width: 90vw;
+            height: 50vh;
         }
         @include tablet{
-            height: 7.875rem;
-            width: 14.5rem;
+            height: 20vh;
+            width: 27vw;
             padding: 0.75rem;
         }
         @include desktop{
-            padding: 0.75rem;
-            width: 18.125rem;
-            height: 12.0625rem;
+            padding: 1em;
+            width: 25vw;
+            height: 25vh;
         }
         
         &-container{
             margin:0;
             @include mobile{
-                padding-bottom: 1rem;
+                padding: 0.5em;
+                margin: 0.5em;
             }
             @include tablet{
+                padding: 1em;
+                margin: 1em;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
-                padding-bottom: 1.25rem;
             }
             @include desktop{
-                padding-bottom: 1.75rem;
+                margin:2em;
+                padding: 2em;
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
