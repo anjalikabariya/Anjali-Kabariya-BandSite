@@ -347,27 +347,85 @@
 }
 
 //comment section to join conversation
+#comment__button{
+    width: 70vw;
+    height: 5vh;
+    background-color: $base-color;
+    color: white;
+    border-radius: 5%;
+    border: 2px solid $base-color;
+    box-shadow: none;
+    @include desktop{
+        width:  40vw;
+    }
+}
 .comment{
-    padding:0 1.5em;
-    &__section-title{
-        @extend .gallery__title;
+    width: 80vw;
+    padding: 0 1.5rem;
+    @include desktop{
+        width: 50vw;
+    }
+    &__form{
+        width: inherit;
+    }
+    &__input{
+        font-family: 'Avenir Next';
+        display: block;
+        border: 2px solid silver;
+        border-radius: 2%;
+        width: 70vw;
+        @include desktop{
+            width: 40vw;
+        }
+        &:focus{
+            border: 2px solid black;
+        }
+        &-name{
+            @extend .comment__input;
+            border-radius: 4%;
+        }
+        &-text{
+            @extend .comment__input;
+            height: 30vh;
+        }
+    }
+    
+
+    &__section{
+            display: flex;
+            flex-direction: column;
+            @include mobile{
+                width: 80vw;
+            }
+            @include tablet{
+                width: 80vw;
+            }
+            @include desktop{
+                width: auto;
+                padding: 0 20vw;
+            }
+        
+
+        &-title{
+            @extend .gallery__title;
+        }
+        &-newcomment{
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid silver;
+            width: 50vw;
+        }
     }
     &__container{
         margin: 1em;
         width: fit-content;
         display: flex;
         justify-content: space-between;
-        &:nth-child(3){
-            border-bottom: 1px solid silver;
-            border-top: 1px solid silver;
-        }
-        &:nth-child(4){
-            border-bottom: 1px solid silver;
-        }
-        &:nth-child(5){
-            border-bottom: 1px solid silver;
-        }
         
+        @include desktop{
+            width: 50vw;
+        }
+        border-bottom: 1px solid silver;
     }
     &__image{
         padding: 1em 0;
@@ -385,6 +443,11 @@
         display: flex;
         padding: 1.5em 0;
         justify-content: space-between;
+        word-wrap: break-word;
+        text-align: left;
+        @include desktop{
+            width: 40vw;
+        }
         &-writer{
             height: fit-content;
         }
@@ -396,10 +459,30 @@
     }
     &__text{
         text-align: left;
-        width: inherit;
+        width: 80vw;
+        word-wrap: break-word;
+        @include desktop{
+            width: 40vw;
+        }
+    }
+    &-writer{
+        font-family: 'Avenir Next';
+        color: silver;
+        font-weight: bold;
+        display: flex;
+        justify-content: left;
+        padding: .5em;
+    }
+    &-text{
+        @extend .comment-writer;
     }
 }
-
+.com__container{
+    width: 50vw;
+}
+.form__section{
+    padding: 0.5em;
+}
 // footer section for contacts
 .footer{
     background-color: $base-color;

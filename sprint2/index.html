@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>BandSite</title>
 </head>
-<body>
-    <header>
+<header>
         <nav class="navigation">
             <!-- navigation bar logo image -->
             <img src="./Assets/Logo/Logo-bandsite.png" class="header__logo" alt="BandSite-Logo">
@@ -27,7 +26,7 @@
                 <h1 class="hero__header">Gaspard Auge & Xavier de Rosnay</h1>
             </div>
         </div>
-        <body>
+        <body onload="Javascript:render()">
             <!-- musicians image and biography container centered horizontally with a quote from musician written below image -->
             <div class="musicians">
                 <h1 class="musicians__image-title">About the Musicians</h1>
@@ -60,8 +59,9 @@
                     <img src="./Assets/Images/Photo-gallery-9.jpg" alt="gallery-image" class="gallery__image">
                 </div>
             </div>
+            <h1 class="comment__section-title">Join the Conversation</h1>
             <div class="comment__section">
-                <h1 class="comment__section-title">Join the Conversation</h1>
+                
                 <div class="comment__section-newcomment">
                     <div class="comment__image">
                         <img src="./Assets/Images/Mohan-muruge.jpg" alt="person-image" class="comment__image-icon">
@@ -69,29 +69,32 @@
                     <div>
                         <form class="comment__form" id="comment__form" action="get">
                             <div class="form__section">
-                                <label for="name" class="comment-writer">Name</label>
-                                <input type="text" name="name" id="name" class="name" placeholder="Your name, e.g. Mohan Muruge">
+                                <label for="name" class="comment-writer">NAME</label>
+                                <input type="text" name="name" id="name" class="comment__input-name" placeholder="Your name, e.g. Mohan Muruge">
                             </div>
                             <div class="form__section">
-                                <label for="comment" class="comment-text ">Comment</label>
-                                <input type="text" name="comment" id="comment" class="comment" placeholder="Add your comment">
+                                <label for="comment" class="comment-text">COMMENT</label>
+                                <textarea type="text" name="comment" id="comment" class="comment__input-text" placeholder="Add new comment"></textarea>
                             </div>
-                            <button type="submit" id="comment__button" value="comment">Submit</button>
+                            <div class="form__section">
+                                <button type="submit" id="comment__button" value="comment">COMMENT</button>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
                 <div class="com__container">
-                    <div class="comment__image">
-                        <img src="./Assets/Images/Mohan-muruge.jpg" alt="person-image" class="comment__image-icon">
-                    </div>
-                    <div class="comment">
-                        <div class="comment__header">    
-                            <h3 class="comment__header-writer"></h3>
-                            <p class="comment__header-timestamp"></p>
+                    <!--This is the format how the code from javascript is injected: 
+                        <div class="comment__container">
+                            <div class="comment__image"></div>
+                        <div class="comment">
+                            <div class="comment__header">    
+                                <h3 class="comment__header-writer"></h3>
+                                <p class="comment__header-timestamp"></p>
+                            </div>
+                            <p class="comment__text"></p>
                         </div>
-                        <p class="comment__text">
-                        </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </body>
@@ -134,6 +137,6 @@
         <div class="copyright">
             <p>Copyright The Bees Knees @ 2018 All Rights Reserved</p>
         </div>
-        <script src="./scipt.js"></script>
+        <script src="./mainscript.js"></script>
     </footer>
 </html>
