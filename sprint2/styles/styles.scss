@@ -288,7 +288,7 @@
 }
 // photo gallery styling 
 .gallery{
-    background-color: $gallery-background;
+    background-color: $alabaster;
     &__title{
         text-align: left;
         @include mobile{
@@ -315,7 +315,7 @@
         @include tablet{
             height: 20vh;
             width: 27vw;
-            padding: 0.75rem;
+            padding: 0.5rem;
         }
         @include desktop{
             padding: 1em;
@@ -374,6 +374,7 @@
         border: 2px solid silver;
         border-radius: 2%;
         width: 70vw;
+        background-color: $alabaster;
         @include desktop{
             width: 40vw;
         }
@@ -411,9 +412,11 @@
         }
         &-newcomment{
             display: flex;
-            justify-content: space-around;
-            border-bottom: 1px solid silver;
-            width: 50vw;
+            border-bottom: 1px solid $gallery-background;
+            padding: 1em;
+            @include desktop{
+                width: 50vw;
+            }
         }
     }
     &__container{
@@ -425,7 +428,7 @@
         @include desktop{
             width: 50vw;
         }
-        border-bottom: 1px solid silver;
+        border-bottom: 1px solid $gallery-background;
     }
     &__image{
         padding: 1em 0;
@@ -615,4 +618,97 @@
     @include desktop{
         padding:1rem 0 2.5rem 8.875rem;
     }    
+}
+
+
+.shows{
+    &__container{
+        @include desktop{
+            display: flex;
+            justify-content: space-between;
+            margin:1em 7em;
+        }
+    }
+    &__title{
+        @extend .footer__title;
+        color: black;
+        padding: 1em 1em;
+    }
+    &__table{
+        display: flex;
+        margin: 1em;
+
+        &-header{
+            display: none;
+            @include tablet{
+                display: block;
+                color: silver;
+                text-align: left;
+            }
+        }
+        &-title{
+            color: silver;
+            text-align: left;
+            padding: 1em 0;
+            @include tablet{
+                display: none;
+            }
+            @include desktop{
+                display: none;
+            }
+        }
+        &-element{
+            padding: 1.5em 0;
+            text-align: left;
+            color: black;
+            width: 23vw;
+            border-bottom: 2px solid silver;
+            height: 8vh;
+            @include desktop{
+                width: 15vw;
+            }
+        }
+        &-dates{
+            @extend .shows__table-element;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        &-venue{
+            @extend .shows__table-dates;
+        }
+        &-location{
+            @extend .shows__table-dates;
+        }
+        &-button{
+            @extend .shows__table-dates;
+            padding: 1.5em;
+        }
+    }
+    &__button{
+        &-buyTicket{
+            background-color: black;
+            color: white;
+            border-radius: 3%;
+            width: 23vw;
+            height: 8vh;
+            @include desktop{
+                width: 15vw;
+            }
+        }
+    }
+}
+
+#shows{
+    &__table{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        @include tablet{
+            flex-direction: row;
+        }
+        &-header3{
+            display: none;
+        }
+    }
 }

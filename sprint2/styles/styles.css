@@ -38,7 +38,6 @@ html, main, body, div {
   padding: 0;
   scroll-behavior: smooth;
   text-align: center;
-  color: #323232;
 }
 
 ul, h3, h2, h1 {
@@ -578,7 +577,7 @@ a {
 }
 
 .gallery {
-  background-color: #e1e1e1;
+  background-color: #fafafa;
 }
 
 .gallery__title, .comment__section-title {
@@ -622,7 +621,7 @@ a {
   .gallery__image {
     height: 20vh;
     width: 27vw;
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
 }
 
@@ -710,6 +709,7 @@ a {
   border: 2px solid silver;
   border-radius: 2%;
   width: 70vw;
+  background-color: #fafafa;
 }
 
 @media screen and (min-width: 1200px) {
@@ -763,10 +763,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-bottom: 1px solid silver;
-  width: 50vw;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1em;
+}
+
+@media screen and (min-width: 1200px) {
+  .comment__section-newcomment {
+    width: 50vw;
+  }
 }
 
 .comment__container {
@@ -780,7 +784,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 @media screen and (min-width: 1200px) {
@@ -932,27 +936,27 @@ a {
   }
 }
 
-.footer__title {
+.footer__title, .shows__title {
   color: #ffffff;
   text-align: left;
 }
 
 @media screen and (min-width: 320px) {
-  .footer__title {
+  .footer__title, .shows__title {
     font-size: 1.5rem;
     padding: 1rem 0 1rem 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .footer__title {
+  .footer__title, .shows__title {
     font-size: 2.25rem;
     padding: 0.75rem 2.5rem 0.75rem 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer__title {
+  .footer__title, .shows__title {
     font-size: 2.25rem;
     padding: 1.5rem 5.25rem 1.875rem 0;
   }
@@ -1080,5 +1084,128 @@ a {
   .copyright {
     padding: 1rem 0 2.5rem 8.875rem;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .shows__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1em 7em;
+  }
+}
+
+.shows__title {
+  color: black;
+  padding: 1em 1em;
+}
+
+.shows__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+}
+
+.shows__table-header {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .shows__table-header {
+    display: block;
+    color: silver;
+    text-align: left;
+  }
+}
+
+.shows__table-title {
+  color: silver;
+  text-align: left;
+  padding: 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .shows__table-title {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .shows__table-title {
+    display: none;
+  }
+}
+
+.shows__table-element, .shows__table-dates, .shows__table-venue, .shows__table-location, .shows__table-button {
+  padding: 1.5em 0;
+  text-align: left;
+  color: black;
+  width: 23vw;
+  border-bottom: 2px solid silver;
+  height: 8vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .shows__table-element, .shows__table-dates, .shows__table-venue, .shows__table-location, .shows__table-button {
+    width: 15vw;
+  }
+}
+
+.shows__table-dates, .shows__table-venue, .shows__table-location, .shows__table-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.shows__table-button {
+  padding: 1.5em;
+}
+
+.shows__button-buyTicket {
+  background-color: black;
+  color: white;
+  border-radius: 3%;
+  width: 23vw;
+  height: 8vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .shows__button-buyTicket {
+    width: 15vw;
+  }
+}
+
+#shows__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  #shows__table {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#shows__table-header3 {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
