@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Shows</title>
 </head>
     <!-- hero image set as background image and text styled using classes and SASS -->
+<body onload="Javascript:myFunction()">
     <header>
         <nav class="navigation">
             <!-- navigation bar logo image -->
-            <img src="./Assets/Logo/Logo-bandsite.png" class="header__logo" alt="BandSite-Logo">
+            <img src="../Assets/Logo/Logo-bandsite.svg" class="header__logo" alt="BandSite-Logo">
             <div>
                 <ul class="navigation__bar">
                 <!-- navigation bar links to navigate between different pages -->
-                    <li><a href="./index.html"><h3 class="navigation__link2">Biography</h3></a></li>
+                    <li><a href="../index.html"><h3 class="navigation__link2">Biography</h3></a></li>
                     <li><h3 class="navigation__link1">Shows</h3></li>
                 </ul>
             </div>
@@ -30,10 +31,10 @@
                 <iframe class="iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257583428&color=ff5500"></iframe>
             </div>
         </div>
-        <body onload="Javascript:myFunction()">
+        <section>
             <div class="shows__container">
                 <div>
-                    <h1 class="shows__title">Shows</h1>
+                    <h2 class="shows__title">Shows</h2>
                 </div>
                 <div>
                     <div class="shows__table">
@@ -41,24 +42,24 @@
                     </div>
                 </div>
             </div>
-            <script src="./scipt.js"></script>
-        </body>
+            <script src="../scripts/shows_scipt.js"></script>
+        </section>
     </main>
     <!-- footer section containing footer title with links to social media contacts and bandsite logo at top -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__contacts-section">
                 <div>
-                    <h1 class="footer__title">Get In Touch</h1>
+                    <h2 class="footer__title">Get In Touch</h2>
                 </div>
                 <div class="footer__contacts-socialmedia">
-                    <img src="./Assets/Icons/SVG/Icon-instagram.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
-                    <img src="./Assets/Icons/SVG/Icon-facebook.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
-                    <img src="./Assets/Icons/SVG/Icon-twitter.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                    <img src="../Assets/Icons/SVG/Icon-instagram.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                    <img src="../Assets/Icons/SVG/Icon-facebook.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                    <img src="../Assets/Icons/SVG/Icon-twitter.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
                 </div>
             </div>
             <div>
-                <img src="./Assets/Logo/Logo-bandsite.svg" alt="footer__logo" class="footer__logo">
+                <img src="../Assets/Logo/Logo-bandsite.svg" alt="footer__logo" class="footer__logo">
             </div>
         </div>
         <!-- contacts of individual agents for different locations followed by copyright line for website -->
@@ -83,5 +84,6 @@
             <p>Copyright The Bees Knees @ 2018 All Rights Reserved</p>
         </div>
     </footer>
+</body>
 </html>
 

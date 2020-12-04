@@ -1,7 +1,7 @@
-@import 'fonts';
-@import 'variables';
-@import 'mixins';
-@import 'defaults';
+@import './partials/defaults';
+@import './partials/fonts';
+@import './partials/mixins';
+@import './partials/variables';
 
 // positioning logo in navigation container
 .header__logo{
@@ -92,42 +92,45 @@
         text-align: left;
         width: 100%;
         display: flex;
-        flex-direction: column;
         background-image: url("../Assets/Images/hero-image.jpg");
         background-size: cover;
         background-color: $base-color;
         opacity: 50%;
         background-position: center;
-        height: fit-content;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 42vh;
         @include tablet{
-            
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
             height: 25rem; 
         }
         @include desktop{
             align-items: center;
+            justify-content: flex-start;
             flex-direction: row;
             height: 41.875rem;
         }
     }
+   
     // hero text positioning style
     &__header{
         color: $white;
-        display: flex;
         text-align: start;
         font-weight: 700;
-        @include mobile{
-            font-size: 1.5rem;
-            padding-left: 1rem;
-            width: 65%;
-        }
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        width: 65%;
         @include tablet{
             font-size: 3.5rem;
             padding-left: 1.5rem;
             width: 75%;
         }
         @include desktop{
-            padding-left: 8.5rem;
-            width: 80%;
+            padding: 0 1em 0 7rem;
+            width: 45vw;
         }  
         &-shows{
             @extend .hero__header;
@@ -137,6 +140,7 @@
             }
             @include desktop{
                 font-size: 2em;
+                width: fit-content;
             }
         } 
     }
@@ -346,7 +350,7 @@
         @include mobile{
             padding: 0.5rem;
             width: 90vw;
-            height: 40vh;
+            height: 30vh;
         }
         @include tablet{
             height: 20vh;
@@ -384,15 +388,19 @@
 
 //comment section to join conversation
 #comment__button{
-    width: 70vw;
+    width: 75vw;
     height: 5vh;
     background-color: $base-color;
     color: white;
     border-radius: 5%;
     border: 2px solid $base-color;
     box-shadow: none;
+    @include tablet{
+        width:  25vw;
+        height: 3em;   
+    }
     @include desktop{
-        width:  40vw;
+        width: 15vw;
     }
 }
 .comment{
@@ -419,11 +427,12 @@
         }
         &-name{
             @extend .comment__input;
+            height: 3em;
             border-radius: 4%;
         }
         &-text{
             @extend .comment__input;
-            height: 30vh;
+            height: 6em;
         }
     }
     
@@ -470,6 +479,8 @@
     &__image{
         padding: 1em 0;
         &-icon{
+            display: inline-block;
+            background-color: silver;
             object-fit: inherit;
             height: 3em;
             width: 3.5em;
@@ -485,15 +496,21 @@
         justify-content: space-between;
         word-wrap: break-word;
         text-align: left;
-        @include desktop{
+        @include tablet{
+            justify-content: flex-start;
             width: 40vw;
         }
         &-writer{
-            padding: 0;
+            font-weight: 500;
+            padding: 0 1em 0 0;
             margin: 0;
+            text-align: left;
             height: fit-content;
         }
         &-timestamp{
+            display: flex;
+            align-items: flex-end;
+            color: silver;
             height: fit-content;
             margin: 0;
             padding: 0;
@@ -519,7 +536,7 @@
         @extend .comment-writer;
     }
 }
-.com__container{
+#com__container{
     width: fit-content;
     @include tablet{
         width: 50vw;
@@ -528,6 +545,14 @@
 }
 .form__section{
     padding: 0.5em;
+    @include desktop{
+        padding: 0.5em 1.5em;
+    }
+    &-button{
+        @extend .form__section;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 // footer section for contacts
 .footer{
