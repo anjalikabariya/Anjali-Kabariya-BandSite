@@ -89,21 +89,23 @@
 // background image for hero container
 .hero{
     &__image{
+        text-align: left;
         width: 100%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         background-image: url("../Assets/Images/hero-image.jpg");
         background-size: cover;
         background-color: $base-color;
         opacity: 50%;
         background-position: center;
-        @include mobile{
-            height: 11.4375rem;
-        }
+        height: fit-content;
         @include tablet{
-            height: 25rem;
+            
+            height: 25rem; 
         }
         @include desktop{
+            align-items: center;
+            flex-direction: row;
             height: 41.875rem;
         }
     }
@@ -116,18 +118,52 @@
         @include mobile{
             font-size: 1.5rem;
             padding-left: 1rem;
-            width: 60%;
+            width: 65%;
         }
         @include tablet{
-            font-size: 3.75rem;
+            font-size: 3.5rem;
             padding-left: 1.5rem;
-            width: 70%;
+            width: 75%;
         }
         @include desktop{
-            font-size: 3.75rem;
-            padding-left: 8.875rem;
-            width: 50%;
-        }   
+            padding-left: 8.5rem;
+            width: 80%;
+        }  
+        &-shows{
+            @extend .hero__header;
+            font-size: 1em;
+            @include tablet{
+                font-size: 1em;
+            }
+            @include desktop{
+                font-size: 2em;
+            }
+        } 
+    }
+}
+
+.iframe{
+    height: 15vh;
+    width: 80vw;
+    @include tablet{
+        width: 60vw;
+    }
+    @include desktop{
+        height: 25vh;
+        width: 30vw;
+    }
+    &__container{
+        display: flex;
+        align-items: flex-end;
+        text-align: left;
+        margin: 1.5em 1em;
+        @include tablet{
+            margin: 1.5em;
+        }
+        @include desktop{
+            margin: 0 7em 0 0;
+            height: 30vh;
+        }
     }
 }
 
@@ -310,7 +346,7 @@
         @include mobile{
             padding: 0.5rem;
             width: 90vw;
-            height: 50vh;
+            height: 40vh;
         }
         @include tablet{
             height: 20vh;
@@ -413,7 +449,8 @@
         &-newcomment{
             display: flex;
             border-bottom: 1px solid $gallery-background;
-            padding: 1em;
+            margin: 1em;
+            width: 90vw;
             @include desktop{
                 width: 50vw;
             }
@@ -421,7 +458,7 @@
     }
     &__container{
         margin: 1em;
-        width: fit-content;
+        width: 90vw;
         display: flex;
         justify-content: space-between;
         
@@ -441,7 +478,7 @@
         }
     }
     &__header{
-        width: inherit;
+        width: 65vw;
         height: fit-content;
         display: flex;
         padding: 1.5em 0;
@@ -452,6 +489,8 @@
             width: 40vw;
         }
         &-writer{
+            padding: 0;
+            margin: 0;
             height: fit-content;
         }
         &-timestamp{
@@ -462,7 +501,7 @@
     }
     &__text{
         text-align: left;
-        width: 80vw;
+        width: 65vw;
         word-wrap: break-word;
         @include desktop{
             width: 40vw;
@@ -481,7 +520,11 @@
     }
 }
 .com__container{
-    width: 50vw;
+    width: fit-content;
+    @include tablet{
+        width: 50vw;
+    }
+    
 }
 .form__section{
     padding: 0.5em;
@@ -632,18 +675,32 @@
     &__title{
         @extend .footer__title;
         color: black;
-        padding: 1em 1em;
+        padding: 0.5em;
     }
     &__table{
         display: flex;
+        flex-direction: column;
         margin: 1em;
 
         &-header{
             display: none;
             @include tablet{
-                display: block;
+                display: flex;
                 color: silver;
                 text-align: left;
+                justify-content: space-between;
+                
+            }
+            @include desktop{
+                justify-content: space-evenly;
+            }
+            &_element{
+                @include tablet{
+                    padding-right: 1.5em;
+                }
+                @include desktop{
+                    padding-right: 7em;   
+                }
             }
         }
         &-title{
@@ -658,21 +715,36 @@
             }
         }
         &-element{
-            padding: 1.5em 0;
+            padding: 0;
             text-align: left;
             color: black;
-            width: 23vw;
-            border-bottom: 2px solid silver;
-            height: 8vh;
+            width: inherit;
+            height: auto;
+            @include tablet{
+                padding: 1.5em 0;
+                height: 8vh;
+                width: 26vw;
+                border-bottom: 2px solid silver;
+            }
             @include desktop{
                 width: 15vw;
             }
         }
+        &-row{
+            display: flex;
+            flex-direction: column;
+            @include tablet{
+                justify-content: space-evenly;
+                flex-direction: row;
+            }
+        }
         &-dates{
             @extend .shows__table-element;
-            display: flex;
-            flex-direction: row;
-            
+            width: 70vw;
+            @include tablet{
+                display: flex;
+                flex-direction: row;
+            }
         }
         &-venue{
             @extend .shows__table-dates;
@@ -682,7 +754,12 @@
         }
         &-button{
             @extend .shows__table-dates;
-            padding: 1.5em;
+            padding: 1.5em 0;
+            width: fit-content;
+            border-bottom: 2px solid silver;
+            @include tablet{
+                padding-left: 1.5em;
+            }
         }
     }
     &__button{
@@ -690,9 +767,9 @@
             background-color: black;
             color: white;
             border-radius: 3%;
-            width: 23vw;
+            width: 90vw;
             height: 8vh;
-            @include desktop{
+            @include tablet{
                 width: 15vw;
             }
         }
@@ -705,10 +782,11 @@
         justify-content: space-evenly;
         flex-direction: column;
         @include tablet{
-            flex-direction: row;
+            display: flex;
+            flex-direction: column;
         }
-        &-header3{
-            display: none;
-        }
+    }
+    &__button-header{
+        color: white;
     }
 }
