@@ -15,28 +15,22 @@
         justify-content: flex-start;
     }
     @include desktop{
-        padding: 1.875rem 1.5rem 1.875rem 8.875rem;
-        justify-content: flex-start;
+        padding-left: 8.875rem;
     }
 }
 // applying flex display for navigation container
 .navigation{
-    height: 5rem;
+    height: 5em;
     width: 100%;
     background-color: $base-color;
     color: $white;
+    padding-top:1rem;
+    display: flex;
     @include mobile{
-        display: flex;
-        padding-top:1rem;
         flex-direction: column;
     }
     @include tablet{
-        display: flex;
         flex-direction: row;
-    }
-    @include desktop{
-        flex-direction: row;
-        display: flex;
     }
     // applying flex display for navigation links container
     &__bar{
@@ -48,23 +42,19 @@
         @include tablet{
             padding: 0%;
         }
-        @include desktop{
-            padding: 0%;
-        }
     }
     // styling for navigation links
     &__link1{
         font-weight: 500;
         color: $white;
         border-bottom: 0.3125rem solid white;
+        
         @include mobile{
-            width: 10.125rem;
+            width: 50vw;
             padding-bottom: 1.25rem;  
         }
         @include tablet{
-            padding: 1.875rem 1.5rem 1.5rem 1.5rem;
-        }
-        @include desktop{
+            width: 20vw;
             padding: 1.875rem 1.5rem 1.5rem 1.5rem;
         }
     }
@@ -72,13 +62,11 @@
         font-weight: 500;
         color: $white;
         @include mobile{
-            width: 10.125rem;
+            width: 50vw;
             padding-bottom: 1.25rem;
         }
         @include tablet{
-            padding: 1.875rem 1.5rem 0 1.5rem;
-        }
-        @include desktop{
+            width: 20vw;
             padding: 1.875rem 1.5rem 0 1.5rem;
         }
     }
@@ -102,16 +90,12 @@
         flex-direction: column;
         height: 42vh;
         @include tablet{
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            height: 25rem; 
+            height: 70vh;
         }
         @include desktop{
             align-items: center;
             justify-content: flex-start;
             flex-direction: row;
-            height: 41.875rem;
         }
     }
    
@@ -135,9 +119,6 @@
         &-shows{
             @extend .hero__header;
             font-size: 1em;
-            @include tablet{
-                font-size: 1em;
-            }
             @include desktop{
                 font-size: 2em;
                 width: fit-content;
@@ -145,7 +126,7 @@
         } 
     }
 }
-
+// iframe styling on shows page
 .iframe{
     height: 15vh;
     width: 80vw;
@@ -156,6 +137,7 @@
         height: 25vh;
         width: 30vw;
     }
+    //iframe container
     &__container{
         display: flex;
         align-items: flex-end;
@@ -176,23 +158,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+//musicians image styling on main page
     &__image{
         @include mobile{
             padding-bottom: 1.5rem;
-            width: 18rem;
-            height: 9.375rem;
+            width: 85vw;
+            height: 30vh;
         }
         @include tablet{
             padding-bottom: 3rem;
-            width: 45rem;
-            height: 25rem;
+            height: 45vh;
         }
         @include desktop{
-            padding-bottom: 3rem;
-            width: 50rem;
-            height: 31.25rem;
+            width: 65vw;
+            height: 55vh;
         }
+        // musician image title "About the Musicians"
         &-title{
             display: flex;
             align-self: flex-start;
@@ -205,8 +186,7 @@
                 padding: 3rem 0 3rem 1.5rem;
             }
             @include desktop{
-                font-size: 2.25rem;
-                padding: 3rem 0 3rem 8.875rem;
+                padding-left: 8.875rem;
             }
         }
     }
@@ -219,21 +199,16 @@
         @include mobile{
             font-size: 0.875rem;
             padding-bottom: 2rem;
-            width: 18rem;
+            width: 85vw;
         }
         @include tablet{
             font-size: 1.5rem;
-            // padding: 0 0 2.5rem 1.5rem;
             padding-bottom: 2.5rem;
-            width: 45rem;
         }
         @include desktop{
-            font-size: 1.5rem;
-            padding-bottom: 2.5rem;
-            // padding:0 0 2.5rem 11.25rem;
-            width: 50rem;
+            width: 65vw;
         }
-
+        //band quote musician name
         &-writer{
             text-align: left;
             @include mobile{
@@ -241,12 +216,8 @@
                 font-size: 0.8125rem;
             }
             @include tablet{
-                padding:0 0 3.5rem 0;
+                padding-bottom: 3.5rem;
                 font-size: 1rem;
-            }
-            @include desktop{
-                font-size: 1rem;
-                padding:0 0 3.5rem 0;
             }
         }
     }
@@ -260,7 +231,7 @@
             padding: 0 1.5rem 2rem 0;
         }
         @include desktop{
-            padding: 0 0 2rem 0;
+            padding-right: 0;
         }
     }
     //musician biograohy paragraph styling 
@@ -277,22 +248,16 @@
             display: flex;
             justify-content: space-between;
         }
+        //biography para container
         &-container{
             display: block;
             text-align: center;
-            @include mobile{
-                width: 18rem;
-            }
-            @include tablet{
-                width: 45rem;
-            }
+            width: 85vw;
             @include desktop{
-                width: 50rem;
+                width: 65vw;
             }
         }
-
-        
-        
+        //biography paragraph left
         &-para1{
             text-align: left;
             @include mobile{
@@ -301,13 +266,13 @@
             }
             @include tablet{
                 padding:0 0.75rem 3rem 0;
-                width: fit-content;
             }
             @include desktop{
                 padding:0 1.25rem 3rem 0;
-                width: 26.25rem;
+                width: 30vw;
             }
         }
+        //biography paragraph right
         &-para2{
             text-align: left;
             @include mobile{
@@ -316,11 +281,10 @@
             }
             @include tablet{
                 padding: 0 0 3rem 0.75rem;
-                width: fit-content;
             }
             @include desktop{
-                padding:0 0 3rem 1.25rem;
-                width: 26.25rem;
+                padding-left: 1.25rem;
+                width: 30vw;
             }
            
         }
@@ -331,17 +295,14 @@
     background-color: $alabaster;
     &__title{
         text-align: left;
-        @include mobile{
-            font-size: 1.5rem;
-            padding: 2rem 0 1.5rem 1rem;
-        }
+        font-size: 1.5rem;
+        padding: 2rem 0 1.5rem 1rem;
         @include tablet{
             font-size: 2.25rem;
             padding: 3rem 0 3rem 1.5rem;
         }
         @include desktop{
-            font-size: 2.25rem;
-            padding: 3rem 0 3rem 8.875rem;
+            padding-left: 2em;
         }
     }
     // individual image container styling
@@ -362,13 +323,10 @@
             width: 25vw;
             height: 25vh;
         }
-        
+        //image container styling
         &-container{
-            margin:0;
-            @include mobile{
-                padding: 0.5em;
-                margin: 0.5em;
-            }
+            padding: 0.5em;
+            margin: 0.5em;
             @include tablet{
                 padding: 1em;
                 margin: 1em;
@@ -378,15 +336,15 @@
             @include desktop{
                 margin:2em;
                 padding: 2em;
-                display: flex;
                 justify-content: center;
-                flex-wrap: wrap;
             }
         }
     }
 }
 
 //comment section to join conversation
+
+//new comment button styling
 #comment__button{
     width: 75vw;
     height: 5vh;
@@ -403,12 +361,27 @@
         width: 15vw;
     }
 }
+//individual form section styling
+.form__section{
+    padding: 0.5em;
+    @include desktop{
+        padding: 0.5em 1.5em;
+    }
+    &-button{
+        @extend .form__section;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+//comment container for displaying comment, author and date
 .comment{
     width: 80vw;
     padding: 0 1.5rem;
     @include desktop{
         width: 50vw;
     }
+    //new comment input form class
     &__form{
         width: inherit;
     }
@@ -422,39 +395,52 @@
         @include desktop{
             width: 40vw;
         }
+        //comment input box styling for input
         &:focus{
             border: 2px solid black;
         }
+        //new comment author name textbox
         &-name{
             @extend .comment__input;
             height: 3em;
             border-radius: 4%;
         }
+        //new comment textbox
         &-text{
             @extend .comment__input;
             height: 6em;
         }
     }
-    
-
+    //comment author input label
+    &-writer{
+        font-family: 'Avenir Next';
+        color: silver;
+        font-weight: bold;
+        display: flex;
+        justify-content: left;
+        padding: .5em;
+    }
+    //comment text input label
+    &-text{
+        @extend .comment-writer;
+    }
+//main container of comment section
     &__section{
             display: flex;
             flex-direction: column;
             @include mobile{
                 width: 80vw;
             }
-            @include tablet{
-                width: 80vw;
-            }
             @include desktop{
                 width: auto;
                 padding: 0 20vw;
             }
-        
-
+        //comment section title styling "Join the Conversation"
         &-title{
             @extend .gallery__title;
         }
+
+        //new comment section container
         &-newcomment{
             display: flex;
             border-bottom: 1px solid $gallery-background;
@@ -465,19 +451,23 @@
             }
         }
     }
+    //individual container for comments to be displayed
     &__container{
         margin: 1em;
         width: 90vw;
         display: flex;
         justify-content: space-between;
-        
         @include desktop{
             width: 50vw;
         }
+        //border below each comment
         border-bottom: 1px solid $gallery-background;
     }
+
+    //comment icon container
     &__image{
         padding: 1em 0;
+        //comment icon styling
         &-icon{
             display: inline-block;
             background-color: silver;
@@ -488,6 +478,7 @@
             object-position: right;
         }
     }
+    //comment author and date container
     &__header{
         width: 65vw;
         height: fit-content;
@@ -500,6 +491,7 @@
             justify-content: flex-start;
             width: 40vw;
         }
+        //comment author name container
         &-writer{
             font-weight: 500;
             padding: 0 1em 0 0;
@@ -507,6 +499,7 @@
             text-align: left;
             height: fit-content;
         }
+        //comment date container
         &-timestamp{
             display: flex;
             align-items: flex-end;
@@ -516,6 +509,7 @@
             padding: 0;
         }
     }
+    //comment text container
     &__text{
         text-align: left;
         width: 65vw;
@@ -524,18 +518,8 @@
             width: 40vw;
         }
     }
-    &-writer{
-        font-family: 'Avenir Next';
-        color: silver;
-        font-weight: bold;
-        display: flex;
-        justify-content: left;
-        padding: .5em;
-    }
-    &-text{
-        @extend .comment-writer;
-    }
 }
+//main container for displaying default and new comments added
 #com__container{
     width: fit-content;
     @include tablet{
@@ -543,17 +527,8 @@
     }
     
 }
-.form__section{
-    padding: 0.5em;
-    @include desktop{
-        padding: 0.5em 1.5em;
-    }
-    &-button{
-        @extend .form__section;
-        display: flex;
-        justify-content: flex-end;
-    }
-}
+
+
 // footer section for contacts
 .footer{
     background-color: $base-color;
@@ -586,6 +561,7 @@
             justify-content: space-between;
         }
     }
+    //footer title styling "Get In Touch"
     &__title{
         color: $white;
         text-align: left;
@@ -632,27 +608,25 @@
         }
     }
 }
-// individual agent contacts styling
+// main agents container
 .agents{
-    @include mobile{
-        margin: 1rem;
-        padding: 0;
-    }
+    margin: 1rem;
+    padding: 0;
+    
     @include tablet{
         display: flex;
-        padding: 0;
         margin: 1.5rem;
     }
     @include desktop{
-        display: flex;
         margin: 0;
         padding-left: 8.875rem;
     }
-    
+    //individual agent contact card
     &__contact{
         padding-right: 1em;
         text-align: left;
         color: $white;
+        //agent contact name
         &-name{
             text-align: left;
             @include mobile{

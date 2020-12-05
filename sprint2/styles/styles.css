@@ -129,26 +129,23 @@ bold {
 
 @media screen and (min-width: 1200px) {
   .header__logo {
-    padding: 1.875rem 1.5rem 1.875rem 8.875rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    padding-left: 8.875rem;
   }
 }
 
 .navigation {
-  height: 5rem;
+  height: 5em;
   width: 100%;
   background-color: #323232;
   color: #ffffff;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width: 320px) {
   .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -158,25 +155,10 @@ bold {
 
 @media screen and (min-width: 768px) {
   .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigation {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -201,12 +183,6 @@ bold {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .navigation__bar {
-    padding: 0%;
-  }
-}
-
 .navigation__link1 {
   font-weight: 500;
   color: #ffffff;
@@ -215,19 +191,14 @@ bold {
 
 @media screen and (min-width: 320px) {
   .navigation__link1 {
-    width: 10.125rem;
+    width: 50vw;
     padding-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .navigation__link1 {
-    padding: 1.875rem 1.5rem 1.5rem 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigation__link1 {
+    width: 20vw;
     padding: 1.875rem 1.5rem 1.5rem 1.5rem;
   }
 }
@@ -239,19 +210,14 @@ bold {
 
 @media screen and (min-width: 320px) {
   .navigation__link2 {
-    width: 10.125rem;
+    width: 50vw;
     padding-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .navigation__link2 {
-    padding: 1.875rem 1.5rem 0 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigation__link2 {
+    width: 20vw;
     padding: 1.875rem 1.5rem 0 1.5rem;
   }
 }
@@ -282,17 +248,7 @@ bold {
 
 @media screen and (min-width: 768px) {
   .hero__image {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 25rem;
+    height: 70vh;
   }
 }
 
@@ -308,7 +264,6 @@ bold {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 41.875rem;
   }
 }
 
@@ -338,12 +293,6 @@ bold {
 
 .hero__header-shows {
   font-size: 1em;
-}
-
-@media screen and (min-width: 768px) {
-  .hero__header-shows {
-    font-size: 1em;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -413,24 +362,22 @@ bold {
 @media screen and (min-width: 320px) {
   .musicians__image {
     padding-bottom: 1.5rem;
-    width: 18rem;
-    height: 9.375rem;
+    width: 85vw;
+    height: 30vh;
   }
 }
 
 @media screen and (min-width: 768px) {
   .musicians__image {
     padding-bottom: 3rem;
-    width: 45rem;
-    height: 25rem;
+    height: 45vh;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__image {
-    padding-bottom: 3rem;
-    width: 50rem;
-    height: 31.25rem;
+    width: 65vw;
+    height: 55vh;
   }
 }
 
@@ -458,8 +405,7 @@ bold {
 
 @media screen and (min-width: 1200px) {
   .musicians__image-title {
-    font-size: 2.25rem;
-    padding: 3rem 0 3rem 8.875rem;
+    padding-left: 8.875rem;
   }
 }
 
@@ -475,7 +421,7 @@ bold {
   .musicians__quote {
     font-size: 0.875rem;
     padding-bottom: 2rem;
-    width: 18rem;
+    width: 85vw;
   }
 }
 
@@ -483,15 +429,12 @@ bold {
   .musicians__quote {
     font-size: 1.5rem;
     padding-bottom: 2.5rem;
-    width: 45rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__quote {
-    font-size: 1.5rem;
-    padding-bottom: 2.5rem;
-    width: 50rem;
+    width: 65vw;
   }
 }
 
@@ -508,15 +451,8 @@ bold {
 
 @media screen and (min-width: 768px) {
   .musicians__quote-writer {
-    padding: 0 0 3.5rem 0;
+    padding-bottom: 3.5rem;
     font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .musicians__quote-writer {
-    font-size: 1rem;
-    padding: 0 0 3.5rem 0;
   }
 }
 
@@ -538,7 +474,7 @@ bold {
 
 @media screen and (min-width: 1200px) {
   .musicians__names {
-    padding: 0 0 2rem 0;
+    padding-right: 0;
   }
 }
 
@@ -577,23 +513,12 @@ bold {
 .musicians__biography-container {
   display: block;
   text-align: center;
-}
-
-@media screen and (min-width: 320px) {
-  .musicians__biography-container {
-    width: 18rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .musicians__biography-container {
-    width: 45rem;
-  }
+  width: 85vw;
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__biography-container {
-    width: 50rem;
+    width: 65vw;
   }
 }
 
@@ -613,16 +538,13 @@ bold {
 @media screen and (min-width: 768px) {
   .musicians__biography-para1 {
     padding: 0 0.75rem 3rem 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__biography-para1 {
     padding: 0 1.25rem 3rem 0;
-    width: 26.25rem;
+    width: 30vw;
   }
 }
 
@@ -642,16 +564,13 @@ bold {
 @media screen and (min-width: 768px) {
   .musicians__biography-para2 {
     padding: 0 0 3rem 0.75rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .musicians__biography-para2 {
-    padding: 0 0 3rem 1.25rem;
-    width: 26.25rem;
+    padding-left: 1.25rem;
+    width: 30vw;
   }
 }
 
@@ -661,13 +580,8 @@ bold {
 
 .gallery__title, .comment__section-title {
   text-align: left;
-}
-
-@media screen and (min-width: 320px) {
-  .gallery__title, .comment__section-title {
-    font-size: 1.5rem;
-    padding: 2rem 0 1.5rem 1rem;
-  }
+  font-size: 1.5rem;
+  padding: 2rem 0 1.5rem 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -679,8 +593,7 @@ bold {
 
 @media screen and (min-width: 1200px) {
   .gallery__title, .comment__section-title {
-    font-size: 2.25rem;
-    padding: 3rem 0 3rem 8.875rem;
+    padding-left: 2em;
   }
 }
 
@@ -713,14 +626,8 @@ bold {
 }
 
 .gallery__image-container {
-  margin: 0;
-}
-
-@media screen and (min-width: 320px) {
-  .gallery__image-container {
-    padding: 0.5em;
-    margin: 0.5em;
-  }
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
 @media screen and (min-width: 768px) {
@@ -739,14 +646,9 @@ bold {
   .gallery__image-container {
     margin: 2em;
     padding: 2em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -772,6 +674,25 @@ bold {
   #comment__button {
     width: 15vw;
   }
+}
+
+.form__section, .form__section-button {
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__section, .form__section-button {
+    padding: 0.5em 1.5em;
+  }
+}
+
+.form__section-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .comment {
@@ -817,6 +738,19 @@ bold {
   height: 6em;
 }
 
+.comment-writer, .comment-text {
+  font-family: 'Avenir Next';
+  color: silver;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: .5em;
+}
+
 .comment__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -828,12 +762,6 @@ bold {
 }
 
 @media screen and (min-width: 320px) {
-  .comment__section {
-    width: 80vw;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .comment__section {
     width: 80vw;
   }
@@ -957,19 +885,6 @@ bold {
   }
 }
 
-.comment-writer, .comment-text {
-  font-family: 'Avenir Next';
-  color: silver;
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  padding: .5em;
-}
-
 #com__container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -980,25 +895,6 @@ bold {
   #com__container {
     width: 50vw;
   }
-}
-
-.form__section, .form__section-button {
-  padding: 0.5em;
-}
-
-@media screen and (min-width: 1200px) {
-  .form__section, .form__section-button {
-    padding: 0.5em 1.5em;
-  }
-}
-
-.form__section-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .footer {
@@ -1128,11 +1024,9 @@ bold {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .agents {
-    margin: 1rem;
-    padding: 0;
-  }
+.agents {
+  margin: 1rem;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1140,16 +1034,12 @@ bold {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0;
     margin: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .agents {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: 0;
     padding-left: 8.875rem;
   }

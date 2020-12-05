@@ -22,30 +22,39 @@
         </nav>
     </header>
     <main>
+        <!-- hero image container -->
         <div class="hero__image">
+            <!-- hero text container -->
             <div class="hero__text">
                 <h4 class="hero__header-shows">Woman worldwide Album</h4>
                 <h1 class="hero__header">Waters of Nazareth x We Are your Friends x Phantom</h1>
             </div>
+            <!-- iframe container -->
             <div class="iframe__container">
                 <iframe class="iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257583428&color=ff5500"></iframe>
             </div>
         </div>
         <section>
+            <!-- main container to display shows table and title -->
             <div class="shows__container">
+                <!-- shows title "Shows" -->
                 <div>
                     <h2 class="shows__title">Shows</h2>
                 </div>
+                <!-- main container for table  -->
                 <div>
                     <div class="shows__table">
+
                     <div id="shows__table">
+                        <!-- shows table header to be displayed for tablet and desktop views -->
                         <div class="shows__table-header">
                             <div class="shows__table-header_element">DATE</div>
                             <div class="shows__table-header_element">VENUE</div>
                             <div class="shows__table-header_element">LOCATION</div>
+                            <!-- id assigned to Button to set it's property to display:none -->
                             <div class="shows__table-header_element" id="shows__button-header">BUTTON</div>
                         </div>
-                        
+                        <!-- shows table content will be inserted here -->
                     </div>
                     </div>
                 </div>
@@ -54,23 +63,27 @@
     </main>
     <!-- footer section containing footer title with links to social media contacts and bandsite logo at top -->
     <footer class="footer">
+        <!-- footer title container -->
         <div class="footer__container">
+            <!-- social media icons and title -->
             <div class="footer__contacts-section">
                 <div>
                     <h2 class="footer__title">Get In Touch</h2>
                 </div>
                 <div class="footer__contacts-socialmedia">
-                    <img src="../Assets/Icons/SVG/Icon-instagram.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
-                    <img src="../Assets/Icons/SVG/Icon-facebook.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
-                    <img src="../Assets/Icons/SVG/Icon-twitter.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                    <img src="./Assets/Icons/SVG/Icon-instagram.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                    <img src="./Assets/Icons/SVG/Icon-facebook.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
+                    <img src="./Assets/Icons/SVG/Icon-twitter.svg" alt="footer__contacts-icons" class="footer__contacts-socialmedia-icon">
                 </div>
             </div>
+            <!-- bandsite logo at footer -->
             <div>
-                <img src="../Assets/Logo/Logo-bandsite.svg" alt="footer__logo" class="footer__logo">
+                <img src="./Assets/Logo/Logo-bandsite.svg" alt="footer__logo" class="footer__logo">
             </div>
         </div>
-        <!-- contacts of individual agents for different locations followed by copyright line for website -->
+        <!-- container for agent contact cards-->
         <div class="agents">
+            <!-- individual agent contact card container -->
             <div class="agents__contact">
                 <h3 class="agents__contact-name">Richard Rovner<br>The Bees Knees Management</h3>
                 <p>460 King Street West <br> Toronto, Ontario M5V 1L7</p>
@@ -87,12 +100,14 @@
                 <p>RLW@wmeentertainment.com</p>
             </div>
         </div>
+        <!-- copyright container -->
         <div class="copyright">
             <p>Copyright The Bees Knees @ 2018 All Rights Reserved</p>
         </div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+        <script src="../scripts/shows_scipt.js"></script>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
-    <script src="../scripts/shows_scipt.js"></script>
 </body>
 </html>
-
